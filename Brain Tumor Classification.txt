@@ -1,6 +1,9 @@
+This project is still in progress, my pc crashed. When I fixed the PC i will continue the project again.
+
 Brain Tumor Classification
+
 Introduction
-I've been exploring the fascinating world of medical image analysis, specifically focusing on brain tumor classification. In this report, I'll delve into the results of two model architectures: the Sequential Model and the Functional API. We'll dissect the architectures, analyze the performance metrics, and interpret the confusion matrix to gain insights into the model's strengths and weaknesses.
+I have been exploring the medical image analysis, specifically focusing on brain tumor classification. In this report, I present the results of two model architectures gotten in the first instance of executing the code: the Sequential Model and the Functional API. We'll dissect the architectures, analyze the performance metrics, and interpret the confusion matrix to gain insights into the model's strengths and weaknesses.
 
 Model Architectures: A Comparative Analysis
 Sequential Model: The Straightforward Approach
@@ -9,19 +12,19 @@ The Sequential Model is a simple, linear stack of layers. It's like building a t
 Functional API: The Versatile Architect
 The Functional API, on the other hand, offers a more flexible approach. It allows us to define complex model topologies, much like designing a circuit. This versatility is crucial for tasks like brain tumor classification, where we often need to incorporate advanced techniques like residual connections and attention mechanisms.
 
-Dataset: A Glimpse into the Data
-We trained our models on a dataset of 5,712 brain images, categorized into four classes: Glioma, Meningioma, Pituitary, and No Tumor. To ensure the model's robustness, we preprocessed the images by resizing them to 224x224 pixels and applying data augmentation techniques.
+Dataset: A look into the Data
+I trained the models on a dataset of 5,712 brain images, categorized into four classes: Glioma, Meningioma, Pituitary, and No Tumor. To ensure the model's robustness, I preprocessed the images by resizing them to 224x224 pixels and applying data augmentation techniques.
 
 Results
 Model Architecture:
-Our model leverages convolutional layers to extract spatial features, global average pooling to reduce dimensionality, and regularization techniques like batch normalization and dropout to prevent overfitting.
+The model leverage convolutional layers to extract spatial features, global average pooling to reduce dimensionality, and regularization techniques like batch normalization and dropout to prevent overfitting.
 
 Performance Metrics:
 
-Initial Results: While the model achieved a decent training accuracy of around 68.66%, the validation accuracy was 53.20%.This suggests underfitting or insufficient generalization.
+Initial Results: While the model achieved a training accuracy of around 68.66%, the validation accuracy was 53.20%.This suggests underfitting or insufficient generalization.
 Interpretation: To improve performance, we'll explore techniques like:
 Hyperparameter tuning to find optimal learning rates and batch sizes
-Data augmentation to expose the model to more diverse training examples
+
 Adding more layers or adopting more advanced architectures
 I will also increase the model complexity
 Confusion Matrix: A Visual Analysis
@@ -30,10 +33,10 @@ A confusion matrix is a powerful tool to assess a classification model's perform
 Class-wise Performance: Which classes are the model struggling with?
 False Positives and False Negatives: Where are the misclassifications occurring?
 Overall Trends: How well does the model perform overall?
-To further quantify performance, we'll calculate metrics like precision, recall, and F1-score. These metrics provide a more granular view of the model's strengths and weaknesses.
+To further quantify performance, I will calculate metrics like precision, recall, and F1-score. These metrics provide a more granular view of the model's strengths and weaknesses.
 
 Conclusion and Recommendations
-The Functional API, with its flexibility, is well-suited for complex tasks like brain tumor classification. However, there's still room for improvement. To enhance performance, I'll consider:
+The combination of sequential model and Functional API, with its flexibility, is well-suited for complex tasks like brain tumor classification. However, there's still room for improvement. To enhance performance, I'll consider:
 
 Data Balancing: Ensuring that the dataset is balanced across all classes
 Attention Mechanisms: Focusing the model's attention on the most relevant regions of the image
